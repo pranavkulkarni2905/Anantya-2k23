@@ -121,7 +121,16 @@ body{
     background: rgba(56, 81, 204, 0.537);
     color: rgb(255, 255, 255);
 }
-
+.footer {  
+    position: fixed;  
+    left: 10px;  
+    bottom: 5px;  
+    right: 10px;   
+    width: 95%;  
+     
+    color: white;  
+    text-align: center;  
+    }  
 @media(max-width: 600px){
     .container{
         min-width: 280px;
