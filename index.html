@@ -1,61 +1,287 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Responsive Registration Form</title>
-    <meta name="viewport" content="width=device-width,
-      initial-scale=1.0"/>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="form-title">ANANTYA REGISTRATION 2K23</h1>
-      <form action="#">
-        <div class="main-user-info">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Anantya 2k23 (PCCoE)</title>
+  <meta name="viewport" content="width=device-width,
+      initial-scale=1.0" />
+      
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="form-title">ANANTYA REGISTRATION 2K23</h1>
+    <form action="#">
+      <div class="main-user-info">
+
+
+        <div class="user-input-box form-row">
+          <label for="fullName" class="gender-title col-sm-5">SELECT EVENT <small style="color: red;">*</small></label>
+
+          <select class="col-sm-7" onchange="yesnoCheck(this);">
+            <option selected>Choose...</option>
+            <option value="code">Coding Event</option>
+            <option value="team">Team Event</option>
+          </select>
+        </div>
+
+        <div class="user-input-box">
+          <hr>
+        </div>
+        <div class="header">
+
+          <h3>PERSONAL DETAILS</h3>
+        </div>
+        <div class="user-input-box">
+          <hr>
+        </div>
+
+        <div class="user-input-box">
+          <label for="fullName" class="gender-title">FULL NAME <small style="color: red;">*</small></label>
+          <input type="text" id="validationServer01" name="fullName" placeholder="Same as to be printed on certificates"
+            required />
+
+        </div>
+
+
+        <div class="user-input-box">
+          <label for="email" class="gender-title">EMAIL <small style="color: red;">*</small></label>
+          <input type="email" id="email" name="email" placeholder="Preferred Offical Email Id" required />
+        </div>
+        <div class="user-input-box">
+          <label for="phoneNumber" class="gender-title">PHONE NO <small style="color: red;">*</small></label>
+          <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Active WhatsApp Number" required />
+        </div>
+        <div class="user-input-box">
+          <label for="password" class="gender-title">COLLEGE NAME <small style="color: red;">*</small></label>
+          <input type="text" id="password" name="password" placeholder="Enter Your College Name" required />
+        </div>
+        <div class="user-input-box">
+          <label for="phoneNumber" class="gender-title">COLLEGE ROLL NO <small style="color: red;">*</small></label>
+          <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Roll No" required />
+        </div>
+        <div class="user-input-box">
+          <label for="fullName" class="gender-title">GRADUATION YEAR <small style="color: red;">*</small></label>
+
+          <select required>
+            <option selected>Choose...</option>
+            <option>2023</option>
+            <option>2024</option>
+            <option>2025</option>
+            <option>2026</option>
+          </select>
+        </div>
+        <div class="user-input-box" id="ifYes1" style="display: none;">
+          <label for="phoneNumber" class="gender-title">HACKERRANK PROFILE LINK <small style="color: red;">*</small></label>
+          <input type="url" id="phoneNumber" name="phoneNumber" placeholder="Hackerrank Profile Link" required />
+        </div>
+        <div class="user-input-box" id="ifYes2" style="display: none;">
+          <label for="phoneNumber" class="gender-title">LINKEDIN PRFOLE LINK</label>
+          <input type="url" id="phoneNumber" name="phoneNumber" placeholder="Linkedin profile link" />
+        </div>
+
+        <div class="main-user-info" id="ifYes3" style="display: none;">
+          <div class="header">
+
+            <h3>TEAM DETAILS</h3>
+          </div>
+
+          <div class="user-input-box">
+            <hr>
+            <hr>
+          </div>
+
+          <div class="user-input-box">
+            <hr>
+            <hr>
+          </div>
+
+          <div class="header">
+            <h5>TEAM MEMBER(LEADER) 1 <small style="color: red;">*</small></h5>
+          </div>
+
+
+
+          <div class="user-input-box">
+            <label for="fullName" class="gender-title">FULL NAME <small style="color: red;">*</small></label>
+            <input type="text" id="fullName" name="fullName" placeholder="Same as to be printed on certificates"
+              required />
+          </div>
+
+
+          <div class="user-input-box">
+            <label for="email" class="gender-title">COLLEGE NAME <small style="color: red;">*</small></label>
+            <input type="text" id="email" name="email" placeholder="College email id" required />
+          </div>
+          <div class="user-input-box">
+            <label for="fullName" class="gender-title">GRADUATION YEAR <small style="color: red;">*</small></label>
+
+            <select required>
+              <option selected>Choose...</option>
+              <option>2023</option>
+              <option>2024</option>
+              <option>2025</option>
+              <option>2026</option>
+            </select>
+          </div>
+
+          <div class="user-input-box">
+            <hr>
+            <hr>
+          </div>
+          <div class="user-input-box">
+            <hr>
+            <hr>
+          </div>
+          <div class="header">
+            <h5>TEAM MEMBER 2 <small style="color: red;">*</small></h5>
+          </div>
+
+
+
+          <div class="user-input-box">
+            <label for="fullName" class="gender-title">FULL NAME <small style="color: red;">*</small></label>
+            <input type="text" id="fullName" name="fullName" placeholder="Same as to be printed on certificates"
+              required />
+          </div>
+
+
+          <div class="user-input-box">
+            <label for="email" class="gender-title">COLLEGE NAME <small style="color: red;">*</small></label>
+            <input type="text" id="email" name="email" placeholder="College email id" required />
+          </div>
+          <div class="user-input-box">
+            <label for="fullName" class="gender-title">GRADUATION YEAR <small style="color: red;">*</small></label>
+
+            <select required>
+              <option selected>Choose...</option>
+              <option>2023</option>
+              <option>2024</option>
+              <option>2025</option>
+              <option>2026</option>
+            </select>
+          </div>
+
+          <div class="user-input-box">
+            <hr>
+            <hr>
+          </div>
+          <div class="user-input-box">
+            <hr>
+            <hr>
+          </div>
+          <div class="header">
+            <h5>TEAM MEMBER 3</h5>
+          </div>
+
+
+
           <div class="user-input-box">
             <label for="fullName" class="gender-title">FULL NAME</label>
-            <input type="text"
-                    id="fullName"
-                    name="fullName"
-                    placeholder="Enter Full Name"/>
+            <input type="text" id="fullName" name="fullName" placeholder="Same as to be printed on certificates" />
+          </div>
+
+
+          <div class="user-input-box">
+            <label for="email" class="gender-title">COLLEGE NAME</label>
+            <input type="text" id="email" name="email" placeholder="College email id" />
           </div>
           <div class="user-input-box">
-            <label for="username" class="gender-title">USERNAME</label>
-            <input type="text"
-                    id="username"
-                    name="username"
-                    placeholder="Enter Username"/>
+            <label for="fullName" class="gender-title">GRADUATION YEAR</label>
+
+            <select>
+              <option selected>Choose...</option>
+              <option>2023</option>
+              <option>2024</option>
+              <option>2025</option>
+              <option>2026</option>
+            </select>
+          </div>
+
+          <div class="user-input-box">
+            <hr>
+            <hr>
           </div>
           <div class="user-input-box">
-            <label for="email" class="gender-title">EMAIL</label>
-            <input type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Enter Email"/>
+            <hr>
+            <hr>
+          </div>
+          <div class="header">
+            <h5>TEAM MEMBER 4</h5>
+          </div>
+
+
+
+          <div class="user-input-box">
+            <label for="fullName" class="gender-title">FULL NAME</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Same as to be printed on certificates" />
+          </div>
+
+
+          <div class="user-input-box">
+            <label for="email" class="gender-title">COLLEGE NAME</label>
+            <input type="text" id="email" name="email" placeholder="College email id" />
           </div>
           <div class="user-input-box">
-            <label for="phoneNumber" class="gender-title">PHONE NO</label>
-            <input type="text"
-                    id="phoneNumber"
-                    name="phoneNumber"
-                    placeholder="Enter Phone Number"/>
-          </div>
-          <div class="user-input-box">
-            <label for="password" class="gender-title">PASSWORD</label>
-            <input type="password"
-                    id="password"
-                    name="password"
-                    placeholder="Enter Password"/>
-          </div>
-          <div class="user-input-box">
-            <label for="confirmPassword" class="gender-title">CONFIRM PASSWORD</label>
-            <input type="password"
-                    id="confirmPassword"
-                    name="confirmPassword"
-                    placeholder="Confirm Password"/>
+            <label for="fullName" class="gender-title">GRADUATION YEAR</label>
+
+            <select>
+              <option selected>Choose...</option>
+              <option>2023</option>
+              <option>2024</option>
+              <option>2025</option>
+              <option>2026</option>
+            </select>
           </div>
         </div>
-        <div class="gender-details-box">
+
+
+
+
+        <div class="header">
+
+          <h3>PAYMENT
+            DETAILS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </h3>
+        </div>
+
+        
+
+
+
+
+        <div class="user-input-box">
+          <label for="fullName" class="gender-title">TRANSACTION ID <small style="color: red;">*</small></label>
+          <input type="text" id="fullName" name="fullName" placeholder="Enter Transaction Id" required />
+        </div>
+
+
+        <div class="user-input-box col-sm-6">
+
+
+
+          <label class="gender-title" for="exampleFormControlFile1">SCREENSHOT OF PAYMENT <small style="color: red;">*</small><small
+              style="color: red;">(upload valid screenshot of payment)</small></label>
+          <input type="file" class="form-control-file" id="exampleFormControlFile1" required>
+        </div>
+      </div>
+
+
+
+      <!-- <div class="gender-details-box">
           <span class="gender-title gender-title">GENDER</span>
           <div class="gender-category">
             <input type="radio" name="gender" id="male">
@@ -65,14 +291,33 @@
             <input type="radio" name="gender" id="other">
             <label for="other">Other</label>
           </div>
-        </div>
-        <div class="form-submit-btn">
-          <input type="submit" value="Register">
-        </div>
-      </form>
-      <footer class="footer">
-        Design and Developed By <a href="https://portfolio-pranavkulkarni.netlify.app/">@Pranav Kulkarni</a>
-      </footer>
-    </div>
-  </body>
+        </div> -->
+
+      <div class="form-submit-btn">
+        <center> <input type="submit" value="Register"></center>
+      </div>
+    </form>
+    <footer class="footer">
+      Design and Developed By <a href="https://portfolio-pranavkulkarni.netlify.app/" target="_blank">@Pranav
+        Kulkarni</a>
+    </footer>
+  </div>
+  <script>
+    function yesnoCheck(that) {
+      if (that.value == "code") {
+        document.getElementById("ifYes1").style.display = "flex";
+        document.getElementById("ifYes2").style.display = "flex";
+      } else if (that.value == "team") {
+        document.getElementById("ifYes3").style.display = "flex";
+      }
+      else {
+        document.getElementById("ifYes1").style.display = "none";
+        document.getElementById("ifYes2").style.display = "none";
+        document.getElementById("ifYes3").style.display = "none";
+      }
+    }
+
+  </script>
+</body>
+
 </html>
