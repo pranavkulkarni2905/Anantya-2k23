@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    
 }
 
 body {
@@ -37,7 +37,7 @@ body {
     text-shadow: 2px 2px 2px black;
     border-bottom: solid 1px white;
     letter-spacing: 2px;
-    font-family: Algerian;
+    font-family: Comic Sans MS;
 }
 
 .main-user-info {
@@ -57,11 +57,19 @@ body {
     width: 50%;
     padding-bottom: 15px;
 }
-
+#demo{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 100px;
+    letter-spacing: 2px;
+    font-family: Comic Sans MS;
+    
+}
 .header {
     color: white;
     border-bottom: solid 1px white;
-    font-family: Algerian;
+    font-family: Comic Sans MS;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -94,10 +102,12 @@ select {
 .gender-title {
     color: white;
     font-size: 20px;
-    font-weight: 600;
+    
+    font-weight: 200;
 
-    letter-spacing: 2px;
-    font-family: algeria;
+    letter-spacing: 4px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 }
 
 .gender-category {
@@ -117,6 +127,7 @@ select {
 
 .form-submit-btn {
     margin-top: 40px;
+
 }
 
 .form-submit-btn input {
@@ -128,11 +139,14 @@ select {
     border: none;
     border-radius: 3px;
     color: rgb(209, 209, 209);
-    background: rgba(63, 96, 114, 0.7);
+    letter-spacing: 3px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    background: rgba(33, 144, 135, 0.7);
 }
 
 .form-submit-btn input:hover {
-    background: rgba(56, 81, 204, 0.537);
+    background: rgba(51, 77, 207, 0.632);
     color: rgb(255, 255, 255);
 }
 
@@ -150,7 +164,7 @@ select {
 
 @media(max-width: 600px) {
     .container {
-        min-width: 280px;
+        min-width: 300px;
     }
 
     .user-input-box {
@@ -162,14 +176,10 @@ select {
         justify-content: space-between;
     }
 
-    .gender-category {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
+    
 
     .main-user-info {
-        max-height: 400px;
+        max-height: 460px;
         overflow: auto;
     }
 
