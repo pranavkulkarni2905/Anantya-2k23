@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Webbit Round 1</title>
+  <meta name="viewport" content="width=device-width,
+      initial-scale=1.0" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="form-title">WEBBIT ROUND 1</h1>
+    <marquee behavior="" direction="" style="color: red;font-family: Comic Sans MS; letter-spacing: 2px;">ANANTYA 2K23 - WEBBIT ROUND 1 - 26th March , 2023 - 1.00pm to 5.00pm</marquee>
+  <center> <h4 style="color: red;">Submission Closing in</h4></center>
+    <p id="demo"> </p>
+    <form action="#">
+      <div class="main-user-info">
+
+
+        <div class="user-input-box form-row">
+          <label for="fullName" class="gender-title col-sm-5">SELECT PROBLEM STATEMENT <small
+              style="color: red;">*</small></label>
+
+          <select class="col-sm-7" onchange="yesnoCheck(this);" required>
+            <option selected>Choose Statement...</option>
+            <option value="ps1">Problem Statement 1</option>
+            <option value="ps2">Problem Statement 2</option>
+            <option value="ps3">Problem Statement 3</option>
+            <option value="ps4">Problem Statement 4</option>
+            <option value="ps5">Problem Statement 5</option>
+
+          </select>
+        </div>
+
+        <div class="user-input-box">
+          <hr>
+        </div>
+
+        <div class="main-user-info" id="ps1"  style="display: none;">
+          <div class="header">
+
+            <b>
+              <h3 style="color: white; font-weight: 200;font-size: 30px;border: solid 1px red;">Build a tourism website that represents the diversity of India.
+              </h3>
+            </b>
+          </div>
+          <div class="user-input-box">
+            <hr>
+          </div>
+          <div class="user-input-box">
+            <hr>
+          </div>
+
+          <h4 style="color: white;"><b><u>Description:</u></b><br></h4>
+          <p style="font-size: 20px;color: white;">
+            Suppose you visit any place in India and you are completely unaware of that place.
+            You don’t have any idea about the tourist places to be visited, the special dishes to be tasted, the culture
+            and history of that place.
+            So you decided to create a website that will guide the visitors about all of the above-mentioned aspects.
+          </p>
+
+          <h4 style="color: white;">
+            <b><u>Needed Features:-</u></b>
+          </h4>
+          <div style="color: white;margin-left: 20px; font-size: 20px;;">
+            <ul>
+              <li>It should be a static website. (You can use any technology)</li>
+              <li>
+                It should contain 5-7 states of India and their own culture like history, variety
+                within food, dancing style, dressing style, festivals(3-4), etc.
+              </li>
+              <li>The website should be designed in such a way that it attracts visitors and
+                encourages them to explore more about India.</li>
+              <li>
+                User-Friendly Interface: A website should have a user-friendly interface that
+                makes it easy for visitors to navigate. Use simple and clear fonts, themes, and
+                colors to make the website look attractive and easy to read.</li>
+              <li>Informative Content: The content on the website should be informative and
+                engaging. Provide details about India, accommodation, transportation, and
+                other activities that visitors can do.</li>
+              <li>Responsive: Ensure that the website is responsive and can be accessed from
+                any device.</li>
+              <li>The website should contain 3-5 webpages.</li>
+
+            </ul>
+
+          </div>
+
+
+          </h4>
+
+
+        </div>
+
+
+
+        <div class="main-user-info" id="ps2"  style="display: none;">
+          <div class="header">
+
+            <b>
+              <h3 style="color: white; font-weight: 200;font-size: 30px;border: solid 1px red;">TECHNOPEDIA: Build a website to explore the technical world.
+
+              </h3>
+            </b>
+          </div>
+          <div class="user-input-box">
+            <hr>
+          </div>
+          <div class="user-input-box">
+            <hr>
+          </div>
+
+          <h4 style="color: white;"><b><u>Description:</u></b><br></h4>
+          <p style="font-size: 20px;color: white;">
+            Suppose your friend is new to the programming world and you are confused about where to start and which language is preferable. so design a website providing him/her the technology-related content.
+
+          </p>
+
+          <h4 style="color: white;">
+            <b><u>Needed Features:-</u></b>
+          </h4>
+          <div style="color: white;margin-left: 20px; font-size: 20px;;">
+            <ul>
+              <li>It should be a static website. (You can use any technology)</li>
+              <li>
+                You can add any technological-related content(for e.g: Different programming languages, Computer related fields, emerging technologies)
+
+              </li>
+              <li>You can add various types of images, videos.
+              </li>
+              <li>The website should be designed in such a way that it attracts visitors and
+                encourages them to explore more about India.</li>
+              <li>
+                User-Friendly Interface: A website should have a user-friendly interface that
+                makes it easy for visitors to navigate. Use simple and clear fonts, themes, and
+                colors to make the website look attractive and easy to read.</li>
+              <li>Informative Content: The content on the website should be informative and
+                engaging. Provide details about India, accommodation, transportation, and
+                other activities that visitors can do.</li>
+              <li>Responsive: Ensure that the website is responsive and can be accessed from
+                any device.</li>
+              <li>The website should contain 3-5 webpages.</li>
+
+            </ul>
+
+          </div>
+
+
+          </h4>
+
+
+        </div>
+
+
+        <div class="main-user-info" id="ps3"  style="display: none;">
+          <div class="header">
+
+            <b>
+              <h3 style="color: white; font-weight: 200;font-size: 30px;border: solid 1px red;">PCCoE Study Hub: A web application for sharing study materials
+
+
+              </h3>
+            </b>
+          </div>
+          <div class="user-input-box">
+            <hr>
+          </div>
+          <div class="user-input-box">
+            <hr>
+          </div>
+
+          <h4 style="color: white;"><b><u>Description:</u></b><br></h4>
+          <p style="font-size: 20px;color: white;">
+            You are a senior student at PCCoE and you noticed that junior students struggled to find study materials. So you decided to build the platform for PCCoE college, where senior students can upload their notes, previous year's question papers, and other study-related materials. These materials can then be viewed and downloaded by junior students to aid their studies. The platform will allow students to share their knowledge and help their peers in their academic pursuits.
+
+          </p>
+
+          <h4 style="color: white;">
+            <b><u>Needed Features:-</u></b>
+          </h4>
+          <div style="color: white;margin-left: 20px; font-size: 20px;;">
+            <ul>
+              <li>It should be a static website. (You can use any technology)</li>
+              
+              <li>The website should be designed in such a way that it attracts visitors and
+                encourages them to explore more about India.</li>
+              <li>
+                User-Friendly Interface: A website should have a user-friendly interface that
+                makes it easy for visitors to navigate. Use simple and clear fonts, themes, and
+                colors to make the website look attractive and easy to read.</li>
+              <li>Informative Content: The content on the website should be informative and
+                engaging. Provide details about India, accommodation, transportation, and
+                other activities that visitors can do.</li>
+              <li>Responsive: Ensure that the website is responsive and can be accessed from
+                any device.</li>
+              <li>The website should contain 3-5 webpages.</li>
+
+            </ul>
+
+          </div>
+
+
+          </h4>
+
+
+        </div>
+
+
+        <div class="main-user-info" id="ps4"  style="display: none;">
+          <div class="header">
+
+            <b>
+              <h3 style="color: white; font-weight: 200;font-size: 30px;border: solid 1px red;">Web Application Like Stack overflow website for PCCoE community
+
+              </h3>
+            </b>
+          </div>
+          <div class="user-input-box">
+            <hr>
+          </div>
+          <div class="user-input-box">
+            <hr>
+          </div>
+
+          <h4 style="color: white;"><b><u>Description:</u></b><br></h4>
+          <p style="font-size: 20px;color: white;">
+            Meet Rohit, a student at PCCoE who is studying computer engineering. One day, he gets stuck on a programming problem and can't figure out how to solve it. He asks his friends for help, but they don't know the answer either. Frustrated, Rohit turns to Google and comes across Stack Overflow, a popular Q&A site for programmers.
+
+            He starts browsing through the questions and answers on Stack Overflow and eventually finds a solution to his problem. He's grateful for the help he received from the community and realizes that PCCoE could benefit from having a similar platform for its students, faculty members, and alumni.
+            
+            That's where our web application comes in. The objective is to create a platform where users can post questions, answer questions, and upvote or downvote answers based on their quality. The platform would have different categories such as programming languages, frameworks, databases, and so on, making it easier for users to find relevant questions and answers.
+          </p>
+
+          <h4 style="color: white;">
+            <b><u>Needed Features:-</u></b>
+          </h4>
+          <div style="color: white;margin-left: 20px; font-size: 20px;;">
+            <ul>
+              <li>It should be a static website. (You can use any technology)</li>
+              <li>
+                You can add any technological-related content(for e.g: Different programming languages, Computer related fields, emerging technologies)
+
+              </li>
+             
+              <li>The website should be designed in such a way that it attracts visitors and
+                encourages them to explore more about India.</li>
+              <li>
+                User-Friendly Interface: A website should have a user-friendly interface that
+                makes it easy for visitors to navigate. Use simple and clear fonts, themes, and
+                colors to make the website look attractive and easy to read.</li>
+              <li>Informative Content: The content on the website should be informative and
+                engaging. Provide details about India, accommodation, transportation, and
+                other activities that visitors can do.</li>
+              <li>Responsive: Ensure that the website is responsive and can be accessed from
+                any device.</li>
+              <li>The website should contain 3-5 webpages.</li>
+
+            </ul>
+
+          </div>
+
+
+          </h4>
+
+
+        </div>
+
+
+
+        <div class="main-user-info" id="ps5"  style="display: none;">
+          <div class="header">
+
+            <b>
+              <h3 style="color: white; font-weight: 200;font-size: 30px;border: solid 1px red;">Develop a website for GFG student chapter PCCoE
+
+
+              </h3>
+            </b>
+          </div>
+          <div class="user-input-box">
+            <hr>
+          </div>
+          <div class="user-input-box">
+            <hr>
+          </div>
+
+          <h4 style="color: white;"><b><u>Description:</u></b><br></h4>
+          <p style="font-size: 20px;color: white;">
+            There were many coders and programmers at a college who were passionate about technology and wanted to improve their skills. They would often work on coding projects on their own, but they felt that there was a need for a platform that could bring them together and help them collaborate.
+            So you decided to start GeekforGeek Student Chapter. Where students can organize coding challenges, workshops, and events to help themselves and others improve their coding skills. ( Refer  CodeChef Pccoe Chapter Website or any coding club releated websites )
+            
+          </p>
+
+          <h4 style="color: white;">
+            <b><u>Needed Features:-</u></b>
+          </h4>
+          <div style="color: white;margin-left: 20px; font-size: 20px;;">
+            <ul>
+              <li>It should be a static website. (You can use any technology)</li>
+              <li>
+                Event management section - displaying upcoming events , past events held by GFG chapter
+              </li>
+             
+              <li>The website should be designed in such a way that it attracts visitors and
+                encourages them to explore more about India.</li>
+              <li>
+                User-Friendly Interface: A website should have a user-friendly interface that
+                makes it easy for visitors to navigate. Use simple and clear fonts, themes, and
+                colors to make the website look attractive and easy to read.</li>
+              <li>Informative Content: The content on the website should be informative and
+                engaging. Provide details about India, accommodation, transportation, and
+                other activities that visitors can do.</li>
+              <li>Responsive: Ensure that the website is responsive and can be accessed from
+                any device.</li>
+              <li>The website should contain 3-5 webpages.</li>
+
+            </ul>
+
+          </div>
+
+
+          </h4>
+
+
+        </div>
+
+
+      </div>
+
+
+
+      <!-- <div class="gender-details-box">
+          <span class="gender-title gender-title">GENDER</span>
+          <div class="gender-category">
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other">
+            <label for="other">Other</label>
+          </div>
+        </div> -->
+
+
+    </form>
+    <footer class="footer">
+      Design and Developed By Webmaster Team
+    </footer>
+  </div>
+  <script>
+    function yesnoCheck(that) {
+      if (that.value == "ps1") {
+        document.getElementById("ps1").style.display = "flex";
+        document.getElementById("ps2").style.display = "none";
+        document.getElementById("ps3").style.display = "none";
+        document.getElementById("ps4").style.display = "none";
+        document.getElementById("ps5").style.display = "none";
+      } else if (that.value == "ps2") {
+        document.getElementById("ps1").style.display = "none";
+        document.getElementById("ps2").style.display = "flex";
+        document.getElementById("ps3").style.display = "none";
+        document.getElementById("ps4").style.display = "none";
+        document.getElementById("ps5").style.display = "none";
+      }
+      else if (that.value == "ps3") {
+        document.getElementById("ps1").style.display = "none";
+        document.getElementById("ps2").style.display = "none";
+        document.getElementById("ps3").style.display = "flex";
+        document.getElementById("ps4").style.display = "none";
+        document.getElementById("ps5").style.display = "none";
+      }
+      else if (that.value == "ps4") {
+        document.getElementById("ps1").style.display = "none";
+        document.getElementById("ps2").style.display = "none";
+        document.getElementById("ps3").style.display = "none";
+        document.getElementById("ps4").style.display = "flex";
+        document.getElementById("ps5").style.display = "none";
+      }
+      else if (that.value == "ps5") {
+        document.getElementById("ps1").style.display = "none";
+        document.getElementById("ps2").style.display = "none";
+        document.getElementById("ps3").style.display = "none";
+        document.getElementById("ps4").style.display = "none";
+        document.getElementById("ps5").style.display = "flex";
+      }
+      else {
+        document.getElementById("ps1").style.display = "none";
+        document.getElementById("ps2").style.display = "none";
+        document.getElementById("ps3").style.display = "none";
+        document.getElementById("ps4").style.display = "none";
+        document.getElementById("ps5").style.display = "none";
+      }
+    }
+
+  </script>
+  <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("March 26, 2023 17:30:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Output the result in an element with id="demo"
+      document.getElementById("demo").innerHTML = days + "D " + hours + "H "
+        + minutes + "M " + seconds + "S ";
+
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "PROBLEM STATEMENT RELEASED";
+      }
+    }, 1000);
+  </script>
+</body>
+
+</html>
