@@ -3,10 +3,10 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Anantya 2k23 (PCCoE)</title>
+  <title>Webbit Round 1</title>
   <meta name="viewport" content="width=device-width,
       initial-scale=1.0" />
-      
+
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -23,336 +23,47 @@
 
 <body>
   <div class="container">
-    <h1 class="form-title">ANANTYA REGISTRATION 2K23</h1>
-    <marquee behavior="" direction="" style="color: red;font-family: Comic Sans MS; letter-spacing: 2px;">Register for the event before the deadline by filling out all necessary details on the registration form.</marquee>
-    <p id="demo"></p>
-    <form action="#">
+    <h1 class="form-title">WEBBIT ROUND 1</h1>
+    <marquee behavior="" direction="" style="color: red;font-family: Comic Sans MS; letter-spacing: 2px;">ANANTYA 2K23 - WEBBIT ROUND 1 - 26th March , 2023 - 1.00pm to 5.00pm</marquee>
+    <center><h4 style="color: red;">Problem Statement Releasing soon</h4></center>
+    <p id="demo"> </p>
       <div class="main-user-info">
 
-
-        <div class="user-input-box form-row">
-          <label for="fullName" class="gender-title col-sm-5">SELECT EVENT <small style="color: red;">*</small></label>
-
-          <select class="col-sm-7" onchange="yesnoCheck(this);" required>
-            <option selected>Choose Event...</option>
-            <option value="code">Coding Event</option>
-            <option value="team">Team Event</option>
-          </select>
-        </div>
-
-        <div class="user-input-box">
-          <hr>
-        </div>
-        <div class="header">
-
-          <h3>PERSONAL DETAILS</h3>
-        </div>
-        <div class="user-input-box">
-          <hr>
-        </div>
-
-        <div class="user-input-box">
-          <label for="fullName" class="gender-title">FULL NAME <small style="color: red;">*</small></label>
-          <input type="text" id="validationServer01" name="fullName" placeholder="Same as to be printed on certificates (Ex.John)"
-            required />
-
-        </div>
-
-
-        <div class="user-input-box">
-          <label for="email" class="gender-title">EMAIL <small style="color: red;">*</small></label>
-          <input type="email" id="email" name="email" placeholder="Preferred Offical Email Id (Ex.john@abc.com)" required />
-        </div>
-        <div class="user-input-box">
-          <label for="phoneNumber" class="gender-title">PHONE NO <small style="color: red;">*</small></label>
-          <input type="text" id="phoneNumber" name="phoneNumber" title="You can only enter 10 digits" pattern="[0-9]{10}" placeholder="Active WhatsApp Number(92345676543)" required />
-        </div>
-        <div class="user-input-box">
-          <label for="password" class="gender-title">COLLEGE NAME <small style="color: red;">*</small></label>
-          <input type="text" id="password" name="password" title="Enter Complete college Name" placeholder="Enter Your College Name (Ex.PCCoE)" required />
-        </div>
-        <div class="user-input-box">
-          <label for="phoneNumber" class="gender-title">COLLEGE ROLL NO <small style="color: red;">*</small></label>
-          <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Roll No" required />
-        </div>
-        <div class="user-input-box">
-          <label for="fullName" class="gender-title">GRADUATION YEAR <small style="color: red;">*</small></label>
-
-          <select required>
-            <option selected>Choose...</option>
-            <option>2023</option>
-            <option>2024</option>
-            <option>2025</option>
-            <option>2026</option>
-          </select>
-        </div>
-        <div class="user-input-box" id="ifYes1" style="display: none;">
-          <label for="phoneNumber" class="gender-title">HACKERRANK PROFILE LINK <small style="color: red;">*</small></label>
-          <input type="url" id="phoneNumber" name="phoneNumber" placeholder="Hackerrank Profile Link (https://www.hackerank.com/abc)" required />
-        </div>
-        <div class="user-input-box" id="ifYes2" style="display: none;">
-          <label for="phoneNumber" class="gender-title">LINKEDIN PRFOLE LINK</label>
-          <input type="url" id="phoneNumber" name="phoneNumber" placeholder="Linkedin profile link(https://www.linkedin.com/in/abc)" />
-        </div>
-
-        <div class="main-user-info" id="ifYes3" style="display: none;">
-          <div class="header">
-
-            <h3>TEAM DETAILS</h3>
-          </div>
-
-          <div class="user-input-box">
-            <hr>
-            <hr>
-          </div>
-
-          <div class="user-input-box">
-            <hr>
-            <hr>
-          </div>
-
-          <div class="header">
-            <h5>TEAM MEMBER(LEADER) 1 <small style="color: red;">*</small></h5>
-          </div>
-
-
-
-          <div class="user-input-box">
-            <label for="fullName" class="gender-title">FULL NAME <small style="color: red;">*</small></label>
-            <input type="text" id="fullName" name="fullName" placeholder="Same as to be printed on certificates"
-              required />
-          </div>
-
-
-          <div class="user-input-box">
-            <label for="email" class="gender-title">COLLEGE NAME <small style="color: red;">*</small></label>
-            <input type="text" id="email" name="email" placeholder="College email id" required />
-          </div>
-          <div class="user-input-box">
-            <label for="fullName" class="gender-title">GRADUATION YEAR <small style="color: red;">*</small></label>
-
-            <select required>
-              <option selected>Choose...</option>
-              <option>2023</option>
-              <option>2024</option>
-              <option>2025</option>
-              <option>2026</option>
-            </select>
-          </div>
-
-          <div class="user-input-box">
-            <hr>
-            <hr>
-          </div>
-          <div class="user-input-box">
-            <hr>
-            <hr>
-          </div>
-          <div class="header">
-            <h5>TEAM MEMBER 2 <small style="color: red;">*</small></h5>
-          </div>
-
-
-
-          <div class="user-input-box">
-            <label for="fullName" class="gender-title">FULL NAME <small style="color: red;">*</small></label>
-            <input type="text" id="fullName" name="fullName" placeholder="Same as to be printed on certificates"
-              required />
-          </div>
-
-
-          <div class="user-input-box">
-            <label for="email" class="gender-title">COLLEGE NAME <small style="color: red;">*</small></label>
-            <input type="text" id="email" name="email" placeholder="College email id" required />
-          </div>
-          <div class="user-input-box">
-            <label for="fullName" class="gender-title">GRADUATION YEAR <small style="color: red;">*</small></label>
-
-            <select required>
-              <option selected>Choose...</option>
-              <option>2023</option>
-              <option>2024</option>
-              <option>2025</option>
-              <option>2026</option>
-            </select>
-          </div>
-
-          <div class="user-input-box">
-            <hr>
-            <hr>
-          </div>
-          <div class="user-input-box">
-            <hr>
-            <hr>
-          </div>
-          <div class="header">
-            <h5>TEAM MEMBER 3</h5>
-          </div>
-
-
-
-          <div class="user-input-box">
-            <label for="fullName" class="gender-title">FULL NAME</label>
-            <input type="text" id="fullName" name="fullName" placeholder="Same as to be printed on certificates" />
-          </div>
-
-
-          <div class="user-input-box">
-            <label for="email" class="gender-title">COLLEGE NAME</label>
-            <input type="text" id="email" name="email" placeholder="College email id" />
-          </div>
-          <div class="user-input-box">
-            <label for="fullName" class="gender-title">GRADUATION YEAR</label>
-
-            <select>
-              <option selected>Choose...</option>
-              <option>2023</option>
-              <option>2024</option>
-              <option>2025</option>
-              <option>2026</option>
-            </select>
-          </div>
-
-          <div class="user-input-box">
-            <hr>
-            <hr>
-          </div>
-          <div class="user-input-box">
-            <hr>
-            <hr>
-          </div>
-          <div class="header">
-            <h5>TEAM MEMBER 4</h5>
-          </div>
-
-
-
-          <div class="user-input-box">
-            <label for="fullName" class="gender-title">FULL NAME</label>
-            <input type="text" id="fullName" name="fullName" placeholder="Same as to be printed on certificates" />
-          </div>
-
-
-          <div class="user-input-box">
-            <label for="email" class="gender-title">COLLEGE NAME</label>
-            <input type="text" id="email" name="email" placeholder="College email id" />
-          </div>
-          <div class="user-input-box">
-            <label for="fullName" class="gender-title">GRADUATION YEAR</label>
-
-            <select>
-              <option selected>Choose...</option>
-              <option>2023</option>
-              <option>2024</option>
-              <option>2025</option>
-              <option>2026</option>
-            </select>
-          </div>
-        </div>
-
-
-
-
-        <div class="header">
-
-          <h3>PAYMENT
-            DETAILS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          </h3>
-        </div>
+</div>
+</div>
+</body>
 
         
-
-
-
-
-        <div class="user-input-box">
-          <label for="fullName" class="gender-title">TRANSACTION ID <small style="color: red;">*</small></label>
-          <input type="text" id="fullName" name="fullName" placeholder="Enter Transaction Id" required />
-        </div>
-
-
-        <div class="user-input-box col-sm-6">
-
-
-
-          <label class="gender-title" for="exampleFormControlFile1">SCREENSHOT OF PAYMENT <small style="color: red;">*</small><small
-              style="color: red;">(upload valid screenshot of payment)</small></label>
-          <input type="file" class="form-control-file" id="exampleFormControlFile1" required>
-        </div>
-      </div>
-
-
-
-      <!-- <div class="gender-details-box">
-          <span class="gender-title gender-title">GENDER</span>
-          <div class="gender-category">
-            <input type="radio" name="gender" id="male">
-            <label for="male">Male</label>
-            <input type="radio" name="gender" id="female">
-            <label for="female">Female</label>
-            <input type="radio" name="gender" id="other">
-            <label for="other">Other</label>
-          </div>
-        </div> -->
-
-      <div class="form-submit-btn">
-        <center> <input type="submit" value="SUBMIT"></center>
-      </div>
-    </form>
-    <footer class="footer">
-      Design and Developed By <a href="https://portfolio-pranavkulkarni.netlify.app/" target="_blank">@Pranav
-        Kulkarni</a>
-    </footer>
-  </div>
-  <script>
-    function yesnoCheck(that) {
-      if (that.value == "code") {
-        document.getElementById("ifYes1").style.display = "flex";
-        document.getElementById("ifYes2").style.display = "flex";
-        document.getElementById("ifYes3").style.display = "none";
-      } else if (that.value == "team") {
-        document.getElementById("ifYes3").style.display = "flex";
-        document.getElementById("ifYes1").style.display = "none";
-        document.getElementById("ifYes2").style.display = "none";
-      }
-      else {
-        document.getElementById("ifYes1").style.display = "none";
-        document.getElementById("ifYes2").style.display = "none";
-        document.getElementById("ifYes3").style.display = "none";
-      }
-    }
-
-  </script>
   <script>
     // Set the date we're counting down to
-    var countDownDate = new Date("March 23, 2023 12:00:00").getTime();
-    
+    var countDownDate = new Date("March 26, 2023 12:55:00").getTime();
+
     // Update the count down every 1 second
-    var x = setInterval(function() {
-    
+    var x = setInterval(function () {
+
       // Get today's date and time
       var now = new Date().getTime();
-        
+
       // Find the distance between now and the count down date
       var distance = countDownDate - now;
-        
+
       // Time calculations for days, hours, minutes and seconds
       var days = Math.floor(distance / (1000 * 60 * 60 * 24));
       var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        
+
       // Output the result in an element with id="demo"
       document.getElementById("demo").innerHTML = days + "D " + hours + "H "
-      + minutes + "M " + seconds + "S ";
-        
+        + minutes + "M " + seconds + "S ";
+
       // If the count down is over, write some text 
       if (distance < 0) {
         clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
+        document.getElementById("demo").innerHTML = "PROBLEM STATEMENT RELEASED";
       }
     }, 1000);
-    </script>
+  </script>
 </body>
 
 </html>
